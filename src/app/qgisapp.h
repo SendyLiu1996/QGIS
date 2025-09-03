@@ -2282,21 +2282,21 @@ class APP_EXPORT QgisApp : public SARibbonMainWindow, private Ui::MainWindow
 
     // SARibbon 菜单初始化
     void initializeRibbonInterface();
-    void adjustDockWidgetsForRibbon(int ribbonBottom);
-    bool dockWidgetEventFilter(QObject *obj, QEvent *event); // 处理dock widget事件的过滤器
-    QRect dockWidgetAreaRect(Qt::DockWidgetArea area) const; // 重写dock widget区域计算
-    void createProjectRibbonCategory();      //创建工程PAGE
-    void createMapRibbonCategory();          //创建地图PAGE
-    void createToolRibbonCategory();         //创建工具PAGE
-    void createPlotRibbonCategory();         //创建标绘PAGE
-    void createViewRibbonCategory();         //创建视图PAGE
-    void createAnalysisRibbonCategory();     //创建分析PAGE
-    void createEditRibbonCategory();         //创建编辑PAGE
-    void createHelpRibbonCategory();         //创建帮助PAGE
+    void adjustDockWidgetsForRibbon( int ribbonBottom );
+    bool dockWidgetEventFilter( QObject *obj, QEvent *event ); // 处理dock widget事件的过滤器
+    QRect dockWidgetAreaRect( Qt::DockWidgetArea area ) const; // 重写dock widget区域计算
+    void createProjectRibbonCategory();                        //创建工程PAGE
+    void createMapRibbonCategory();                            //创建地图PAGE
+    void createToolRibbonCategory();                           //创建工具PAGE
+    void createPlotRibbonCategory();                           //创建标绘PAGE
+    void createViewRibbonCategory();                           //创建视图PAGE
+    void createAnalysisRibbonCategory();                       //创建分析PAGE
+    void createEditRibbonCategory();                           //创建编辑PAGE
+    void createHelpRibbonCategory();                           //创建帮助PAGE
 
     // SARibbon 成员变量
-    SARibbonBar* mRibbonBar = nullptr;
-    QTimer* mDockWidgetAdjustTimer = nullptr; // 定期调整dock widget位置的定时器
+    SARibbonBar *mRibbonBar = nullptr;
+    QTimer *mDockWidgetAdjustTimer = nullptr; // 定期调整dock widget位置的定时器
 
     /**
      * Add the current project to the recently opened/saved projects list
